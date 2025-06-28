@@ -286,3 +286,23 @@ footer .seccion p:hover {
     color: #ddd;
     font-size: 13px;
 }
+
+
+.info-extra {
+    display: none;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 16px;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+}
+
+.paquete.active .info-extra {
+    display: block;
+}
+
+nav a::after {
+    display: block;
+    background-color: #510d66;
+    transition: width 0.3s ease;
+}
