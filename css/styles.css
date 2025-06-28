@@ -212,3 +212,77 @@ footer {
         align-items: center;
     }
 }
+
+/* ======== MEJORAS ESTÉTICAS ======== */
+
+/* Botón hover en navbar más llamativo */
+nav a:hover {
+    font-size: 17px;
+    color: #fff;
+    background-color: #510d66;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Sombra y escala en tarjetas de paquetes */
+.paquete {
+    background: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paquete:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación suave para el texto principal */
+.cont_prin_drch h2 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fondo de sección "información" con gradiente suave */
+.informacion {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    padding: 40px 20px;
+    border-top: 4px solid #880ad1;
+    border-bottom: 4px solid #1746e2;
+}
+
+/* Efecto en títulos al pasar el cursor */
+.contenido_info h3:hover,
+.conten_paquetes h2:hover {
+    text-shadow: 2px 2px 5px rgba(255, 0, 204, 0.4);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer con mejor contraste y hover */
+footer {
+    background: linear-gradient(to right, #333399, #510d66);
+    color: white;
+}
+
+footer .seccion p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.politicas {
+    color: #ddd;
+    font-size: 13px;
+}
